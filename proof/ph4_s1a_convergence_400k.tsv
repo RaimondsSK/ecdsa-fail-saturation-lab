@@ -1,0 +1,7 @@
+schedule	trim_lo	trim_hi	trim_amt	touches_9_10	n	ok	width_overflow	nonconvergence	comparator_mismatch	worst_widthoverflow_step	worst_factor_hex
+baseline_HEAD	0	0	0	false	400000	399686	152	162	0	20	0x9b89915de25bf8f60ba23e93737a608fb0a10456137811720050389330afe320
+trim1_steps8_11	8	11	1	true	400000	399662	176	162	0	8	0xc9766c20b79b6694dc11446a37fe4dcdbb8de4b6a47eee12f0db1dbf8ce60000
+trim2_steps8_11	8	11	2	true	400000	399585	253	162	0	8	0xecd92d1874de0fae8eae20a4d08c2ec338399b848d354c484fdf1d121325b85e
+trim1_steps0_15	0	15	1	true	400000	0	399838	162	0	0	0x2bdb869b077fac2ea755a245c7ff7d7aa03c6f2fd78467d4672b75cf28bbffc1
+trim2_steps0_15	0	15	2	true	400000	0	399838	162	0	0	0x2bdb869b077fac2ea755a245c7ff7d7aa03c6f2fd78467d4672b75cf28bbffc1
+cap255_steps0_9	0	9	1	true	400000	0	399838	162	0	0	0x2bdb869b077fac2ea755a245c7ff7d7aa03c6f2fd78467d4672b75cf28bbffc1

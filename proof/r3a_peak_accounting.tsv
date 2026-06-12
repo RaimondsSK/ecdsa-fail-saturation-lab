@@ -1,0 +1,10 @@
+# R3a toy lifecycle accounting (ACCOUNTING MODEL, not a circuit result).
+# params: bits_per_step=2.5 (HYP) apply_scratch_frac=1.0 (HYP) samples/width=2000
+n	co_resident_peak	split_peak	delta	transcript_size	operand_live_peak	scratch_live_peak	apply_peak	pack_peak	recon_ok	recon_fail	noninvertible	samples
+16	113	126	-13	78	32	31	126	85	2000	0	0	2000
+32	212	241	-29	145	64	63	241	150	2000	0	0	2000
+64	401	462	-61	270	128	127	462	279	2000	0	0	2000
+# framing[model-as-written]: split_lower_all=False
+# framing[optimistic (apply reuses operands, co no-borrow)]: split_optimistic_lower_all=True
+# co_noborrow vs split_optimistic per n: n16:141vs94, n32:272vs177, n64:525vs334
+# DECISION(bits_per_step=2.5,apply_scratch_frac=1.0): recon_clean=True -> INCONCLUSIVE

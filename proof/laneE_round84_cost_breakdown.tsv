@@ -1,0 +1,14 @@
+# Lane E round84 square cost breakdown. HEAD 013f1f7. source: TRACE_PHASES + TRACE_PHASE_ACTIVE (commit-identical to laneB trace).
+# total_ccx_emitted=1458957 (= avg Toffoli/shot). global peak=1302q. GO threshold: round84 share >= 15%.
+phase	ccx	share_pct	max_active_q	qubits_below_peak	on_1302_peak
+round84_inplace_solinas_square_forward	65791	4.51	1284	18	no
+round84_inplace_solinas_square_inverse	65791	4.51	1284	18	no
+round84_inplace_solinas_fold	4337	0.30	1160	142	no
+round84_inplace_solinas_unfold	4337	0.30	1160	142	no
+round84_inplace_solinas_sub	2554	0.18	1069	233	no
+round84_fused_square_xtail_add_double_ox	1144	0.08	1285	17	no
+round84_fused_square_xtail_negate_to_x3	255	0.02	1024	278	no
+round84_fused_square_xtail_dx_sub_lam_square_lowq	0	0.00	1024	278	no
+# AGGREGATE square_only(fwd+inv)	131582	9.02	1284	18	no
+# AGGREGATE round84_total	144209	9.88	1285	17	no
+# THRESHOLD 15%=218843ccx -> round84_total 144209 = 9.88% -> Q1 FAIL
