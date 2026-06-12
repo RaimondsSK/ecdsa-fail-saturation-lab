@@ -1,5 +1,8 @@
 # ecdsa-fail-saturation-lab
 
+> **Update v0.2:** newer leaderboard frontier exists; see `docs/FRONTIER_REBASE_V0_2.md`. v0.1 is retained as
+> the archived analysis of `013f1f7`.
+
 **An architecture-saturation / negative-result / methodology report around the ecdsa.fail frontier circuit
 (commit `013f1f7`).**
 
